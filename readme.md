@@ -27,10 +27,10 @@ This is a modern, responsive website template built as a front-end practice proj
 🔸 Clean folder structure and organized assets.
 
 🚀 Live Preview
-🔗 https://mkandil4.github.io/Template-Two-Kasper/
+🔗 https://mkandil4.github.io/Template-Three-Elzero/
 
 📂 Source Code
-🔗 https://github.com/MKandil4/Template-Two-Kasper
+🔗 https://github.com/MKandil4/Template-Three-Elzero
 
 📂 Folder Structure
 
@@ -44,3 +44,4 @@ Template-One/ ├── index.html ├── css/ │ └── style.css ├─
 
 💬 Feedback
 Feel free to leave feedback, issues, or suggestions to help improve the project! 🫶
+
