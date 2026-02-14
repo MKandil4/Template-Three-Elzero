@@ -1324,13 +1324,12 @@ a {
 /* End Video */
 
 /* Start Our Awesome Stats */
-
 .stats {
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
   background-color: var(--section-background);
   position: relative;
-  /* background-image: url(../images/stats.jpg); */
+  background-image: url(../images/stats.jpg);
   background-size: cover;
   min-height: 300px;
 }
@@ -1338,56 +1337,64 @@ a {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: #eeeeee49; */
+  background-color: rgb(255 255 255 / 95%);
+}
+.stats h2 {
+  font-weight: bold;
+  font-size: 40px;
+  position: relative; /*علشان يطلع فوق الاوفر لاي*/
+  width: fit-content;
+  margin: 0 auto 50px;
 }
 .stats .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 40px;
+  gap: 20px;
 }
 .stats .box {
   background-color: white;
   text-align: center;
-  padding: 40px;
+  padding: 30px 15px;
   cursor: pointer;
-  position: relative;
+  position: relative; /*علشان يطلع فوق الاوفر لاي*/
+  opacity: 0.7; /*بخلي المحتوى شفاف*/
+  transition: 0.5s;
+}
+.stats .box:hover {
+  opacity: 1; /*برجعة تاني غير شفاف*/
 }
 .stats .box::before,
 .stats .box::after {
   content: "";
   position: absolute;
-  border-left: 3px solid var(--main-color);
-  width: 100px;
+  background-color: var(--main-color);
+  width: 2px;
   height: 0;
-  transition: 0.8s;
+  transition: 1s;
 }
 .stats .box::before {
+  top: 0;
+  right: 0;
+}
+.stats .box::after {
   left: 0;
   bottom: 0;
 }
-.stats .box::after {
-  right: -100px;
-  top: 0;
-}
-.stats .box:hover::before {
-  height: 100%;
-}
-
+.stats .box:hover::before,
 .stats .box:hover::after {
   height: 100%;
 }
 
-.stats .box i {
-}
 .stats .box span {
   display: block;
 }
 .stats .box span.number {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: bold;
   margin: 15px 0;
 }
 .stats .box span.text {
